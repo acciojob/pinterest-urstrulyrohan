@@ -1,16 +1,57 @@
 <!DOCTYPE html>
 
 <html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .hero {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+      }
 
-<head>
-	<link rel="stylesheet" href="styles.css">
-</head>
+      .hero-description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-inline: 10px;
+      }
 
-<body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+      img {
+        width: 500px;
+        height: 220px;
+        object-fit: cover;
+      }
 
-</body>
+      button,
+      a {
+        background-color: red;
+        border: none;
+        border-radius: 3px;
+        padding: 5px 10px;
+        color: white;
+        text-decoration: none;
+      }
+    </style>
+  </head>
 
+  <body>
+    <!-- the entire body must be written by student -->
+
+    <div class="hero">
+      <img
+        src="https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt="Beautiful Scenery of Lake and Mountains"
+      />
+      <div class="hero-description">
+        <h1>Welcome to my Pinterest clone</h1>
+        <p>Discover new inspiration and save your favourite ideas</p>
+        <button><a href="#">Explore Now</a></button>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="./script.js"></script>
+  </body>
 </html>
